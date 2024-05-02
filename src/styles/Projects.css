@@ -1,6 +1,22 @@
 .container {
   width: 100%;
+  position: relative;
   height: auto;
   background-color: aqua;
   overflow: hidden;
+  padding: 3rem;
+}
+
+.project-name {
+  position: absolute;
+  top: 1rem;
+  left: 45%;
+}
+.project-container {
+  position: relative;
+  padding: 2.5rem;
+}
+
+.project-container:hover {
+  background-color: bisque;
 }

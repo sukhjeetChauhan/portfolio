@@ -21,7 +21,7 @@ function CustomCarousel({ children }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      if (val >= children.length - 1) {
+      if (val >= children.length - 3) {
         return 0
       } else {
         return val + 1
@@ -68,7 +68,7 @@ function CustomCarousel({ children }) {
           </div>
         )
       })}
-
+      {/* 
       <div className="container__slider__links">
         {children.map((item, index) => {
           return (
@@ -86,7 +86,7 @@ function CustomCarousel({ children }) {
             ></button>
           )
         })}
-      </div>
+      </div> */}
 
       <button
         className="slider__btn-next"
