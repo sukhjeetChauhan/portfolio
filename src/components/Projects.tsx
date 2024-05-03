@@ -1,5 +1,5 @@
 import CustomCarousel from './CustomCarousel'
-import images from '../../data/images.ts'
+import guided from '../../data/projects.ts'
 import '../styles/Projects.css'
 
 export default function Projects() {
@@ -9,11 +9,11 @@ export default function Projects() {
       <h2>Guided Projects</h2>
       <div className="container">
         <CustomCarousel>
-          {images.map((image, index) => {
+          {guided.map((project, index) => {
             return (
               <div className="project-container">
-                <h3 className="project-name">food Image</h3>
-                <img key={index} src={image.imgURL} alt={image.imgAlt} />
+                <h3 className="project-name">{project.name}</h3>
+                <img key={index} src={project.imgURL} alt={project.imgAlt} />
               </div>
             )
           })}
@@ -22,11 +22,11 @@ export default function Projects() {
       <h2>Self made Projects</h2>
       <div className="container">
         <CustomCarousel>
-          {images.map((image, index) => {
+          {guided.map((project, index) => {
             return (
               <div className="project-container">
-                <h3 className="project-name">food Image</h3>
-                <img key={index} src={image.imgURL} alt={image.imgAlt} />
+                <h3 className="project-name">{project.name}</h3>
+                <img key={index} src={project.imgURL} alt={project.imgAlt} />
               </div>
             )
           })}
