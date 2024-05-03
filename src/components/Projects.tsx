@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <>
       {isOpen && <div className="wrapper"></div>}
-      {isOpen && <Modal data={modalData}></Modal>}
+      {isOpen && <Modal data={modalData} setIsOpen={setIsOpen}></Modal>}
       <h1>Projects</h1>
       <h2>Guided Projects</h2>
       <div key="guided" className="container">
