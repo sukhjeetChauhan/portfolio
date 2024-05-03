@@ -21,7 +21,7 @@ const guided = [
   },
   {
     name: 'Javascript Cafe',
-    gitHub: '',
+    gitHub: 'https://github.com/sukhjeetChauhan/Cafe',
     deploy: '',
     imgURL: '/project.images/cafe.png',
     imgAlt: 'cafe',
