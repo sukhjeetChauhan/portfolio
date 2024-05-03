@@ -5,7 +5,7 @@ import '../styles/CustomCarousel.css'
 function CustomCarousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [slideDone, setSlideDone] = useState(true)
-  const [timeID, setTimeID] = useState(null)
+  const [timeID, setTimeID] = useState(0)
 
   useEffect(() => {
     if (slideDone) {
@@ -42,6 +42,8 @@ function CustomCarousel({ children }) {
   const AutoPlayStop = () => {
     if (timeID > 0) {
       clearTimeout(timeID)
+      setTimeID(0)
+
       setSlideDone(false)
     }
   }

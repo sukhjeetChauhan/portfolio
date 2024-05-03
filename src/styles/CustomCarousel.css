@@ -1,6 +1,6 @@
 .container__slider {
   /* position: relative; */
-  width: 33%;
+  width: 33.3%;
   padding: 0;
   /* overflow: hidden; */
   display: flex;
@@ -13,11 +13,13 @@
 }
 
 .container__slider > button {
-  background-color: transparent;
+  background-color: #33333360;
+  border-radius: 50%;
   outline: none;
   border: 0;
   color: whitesmoke;
-  font-size: 24px;
+  font-size: 28px;
+  padding: 1.3rem;
 }
 
 .container__slider > button:active {
@@ -63,7 +65,7 @@
   box-sizing: border-box;
   min-width: 100%;
   height: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   object-fit: cover;
   height: auto;
   transform: translateX(0);
@@ -100,5 +102,9 @@
 
 .slider__item img {
   width: 100%;
-  height: auto;
+  height: 22rem;
 }
+
+/* .slider__item img:hover {
+  filter: brightness(75%);
+} */

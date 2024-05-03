@@ -20,7 +20,7 @@ const guided = [
       'This was a guided project to build a map based tracking app using javascript. In this project external library called Leaflet was used to display the map and it was specifically targeted to learn how constructor classes work in javascript.',
   },
   {
-    name: 'Javascritpt Cafe',
+    name: 'Javascript Cafe',
     gitHub: '',
     deploy: '',
     imgURL: '/project.images/cafe.png',
@@ -30,7 +30,7 @@ const guided = [
       'In this project, challenge was to display the prices based on the customer order. In addition to this also needed to keep track of the inventory of all the products in the cafe. If we ran out of any product, we should have ability to alert that we have ran out and also have abilty to update the inventory.',
   },
   {
-    name: 'Test Driven bowling app',
+    name: 'Test Driven app',
     gitHub: '',
     deploy: '',
     imgURL: '/project.images/tdd.png',
@@ -40,8 +40,6 @@ const guided = [
       'This project was mostly build by myself by just a little oversight from the facilitators. The primary goal of this project was to learn test driven programming. Doing this project made me realize how you can make your code cleaner and simpler with test driven approach.',
   },
 ]
-
-export default guided
 
 const selfMade = [
   {
@@ -86,43 +84,53 @@ const selfMade = [
       'This is my ongoing personal project. The main idea of this app is to build an app which provides more flexibility to the users in terms of designing their own personal health schedule. It shows exercises to the user based on choice of their workout days and choice of their body part. Further functionality that I plan to add to this is to dispaly the user amount of calories they can consume based on their personal goals and finally also add functionality of giving them upto date information on health industry.',
   },
   {
-    name: 'Omnifood',
-    gitHub: '',
-    deploy: 'https://omnifood-sukh.netlify.app/',
-    imgURL: 'public/project.images/Omnifood.png',
-    imgAlt: 'omnifood',
-    tech: ['HTML', 'CSS'],
+    name: 'Books Todos',
+    gitHub: 'https://github.com/sukhjeetChauhan/Books-to-dos',
+    deploy: 'https://books-to-do.pushed.nz/',
+    imgURL: '/project.images/todos.png',
+    imgAlt: 'todos',
+    tech: [
+      'React',
+      'Express',
+      'vite',
+      'typescript',
+      'node.js',
+      'knex',
+      'sql lite',
+    ],
     description:
-      'This project was a guided project based on building a responsive web design using various CSS techniques. This really helped me clear my fundamentals of CSS and how the grid and flex function works.',
+      'This is a basic fullstack todos app. I added little extra touch of this app being a Books-to-Read todos instead of a normal todos. The aim of this project was to practice backend crud operations and setting up back end routes',
   },
   {
-    name: 'Omnifood',
+    name: 'AT Transport Tracker',
     gitHub: '',
-    deploy: 'https://omnifood-sukh.netlify.app/',
-    imgURL: 'public/project.images/Omnifood.png',
-    imgAlt: 'omnifood',
-    tech: ['HTML', 'CSS'],
+    deploy: '',
+    imgURL: '/project.images/AT-api.png',
+    imgAlt: 'AT tracker app',
+    tech: ['React', 'Express', 'vite', 'typescript', 'node.js'],
     description:
-      'This project was a guided project based on building a responsive web design using various CSS techniques. This really helped me clear my fundamentals of CSS and how the grid and flex function works.',
+      'This project was initiated to understand consumption of server side apis. I used Auckland transport api along with React Leaflet library to display live data of Auckland public transport on Auckland map.',
   },
   {
-    name: 'Omnifood',
-    gitHub: '',
-    deploy: 'https://omnifood-sukh.netlify.app/',
-    imgURL: 'public/project.images/Omnifood.png',
-    imgAlt: 'omnifood',
-    tech: ['HTML', 'CSS'],
+    name: 'Recipe App',
+    gitHub: 'https://github.com/sukhjeetChauhan/Recipe-App',
+    deploy: 'https://sukhjeetchauhan.github.io/Recipe-App/',
+    imgURL: '/project.images/RecipeApp.png',
+    imgAlt: 'Recipe app landing page',
+    tech: ['HTML', 'CSS', 'javascript'],
     description:
-      'This project was a guided project based on building a responsive web design using various CSS techniques. This really helped me clear my fundamentals of CSS and how the grid and flex function works.',
+      'This was my first javascript project undertaken by me to understand consuming apis with javascript and also to expand my understanding in how different components of javascript work. The idea behind this app was to display give recipe ideas to the users based on the ingredients they have.',
   },
   {
-    name: 'Omnifood',
-    gitHub: '',
-    deploy: 'https://omnifood-sukh.netlify.app/',
-    imgURL: 'public/project.images/Omnifood.png',
-    imgAlt: 'omnifood',
-    tech: ['HTML', 'CSS'],
+    name: 'Calculator',
+    gitHub: 'https://github.com/sukhjeetChauhan/calculator',
+    deploy: 'https://sukhjeetchauhan.github.io/calculator-app/index.htm',
+    imgURL: '/project.images/calculator.png',
+    imgAlt: 'calculator',
+    tech: ['HTML', 'CSS', 'javascript'],
     description:
-      'This project was a guided project based on building a responsive web design using various CSS techniques. This really helped me clear my fundamentals of CSS and how the grid and flex function works.',
+      'This was a one day javascript project undertaken by me to understand implementing the working of a calculator. I had to work with lot of conditionals to build this app. This helped me strengthen my understanding of the  work-flow of a javascript app.',
   },
 ]
+
+export { guided, selfMade }
