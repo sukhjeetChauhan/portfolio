@@ -1,9 +1,9 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   /* text-align: center; */
-}
+/* } */
 
 /* .logo {
   height: 6em;
@@ -29,14 +29,21 @@
 
 /* styling the section */
 
-.section {
+/* .app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+} */
+
+/* .section {
   margin: 0 auto;
   padding: 7rem 10rem;
 
   width: 120rem;
   min-height: 100vh;
   /* overflow: hidden; */
-}
+/* } */
+*/
 
 /* ////////////////////////////////////////// */
 /* Landing section */

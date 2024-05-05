@@ -1,18 +1,25 @@
 import '../styles/Navigation.css'
+import { HashLink } from 'react-router-hash-link'
+import HamburgerMenu from './sub-component/Hamburger'
 
 export default function Navigation() {
   return (
     <nav className="nav-bar">
-      <div className="logo">Sukhjeet Chauhan</div>
+      <div className="logo-name">Sukhjeet Chauhan</div>
       <div className="navigation">
         <ul className="nav-list">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Blogs</li>
-          <li>Contact</li>
+          <HashLink smooth to="#about">
+            <li>About</li>
+          </HashLink>
+          <HashLink smooth to="#projects">
+            <li>Projects</li>
+          </HashLink>
+          <HashLink smooth to="#contact">
+            <li>Contact</li>
+          </HashLink>
         </ul>
       </div>
+      <HamburgerMenu />
     </nav>
   )
 }

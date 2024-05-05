@@ -16,7 +16,7 @@ export default function Projects() {
     <>
       {isOpen && <div className="wrapper"></div>}
       {isOpen && <Modal data={modalData} setIsOpen={setIsOpen}></Modal>}
-      <h1>Projects</h1>
+      <h1 id="projects">Projects</h1>
       <h2>Guided Projects</h2>
       <div key="guided" className="container">
         <CustomCarousel>
