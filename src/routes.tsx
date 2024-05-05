@@ -1,11 +1,12 @@
 import { Route, createRoutesFromElements } from 'react-router-dom'
 import App from './components/App.tsx'
-import Projects from './components/Projects.tsx'
+
+import Contact from './components/Contact.tsx'
 
 const routes = createRoutesFromElements(
   <>
     <Route path="/" element={<App />} />
-    <Route path="/projects" element={<Projects />} />
+    <Route path="/contact" element={<Contact />} />
   </>
 )
 

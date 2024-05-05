@@ -3,7 +3,7 @@ import StackIcon from 'tech-stack-icons'
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-heading">
         <h2>About me</h2>
       </div>
@@ -16,9 +16,9 @@ export default function About() {
           and business and I am recent graduate from Dev Academy Aotearoa
         </p>
         <p>
-          Recently, I have been diving deeper into the web development
-          world and I really enjoy learning new technologies and problem solving. I have few
-          projects under my belt which I have displayed in the following
+          Recently, I have been diving deeper into the web development world and
+          I really enjoy learning new technologies and problem solving. I have
+          few projects under my belt which I have displayed in the following
           section.
         </p>
         <p>Tech Stack</p>
