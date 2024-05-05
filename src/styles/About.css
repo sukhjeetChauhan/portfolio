@@ -1,0 +1,50 @@
+/* Styling about section */
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem 7rem;
+  background-color: #7ab586;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+/* .about-heading {
+  display: flex;
+} */
+.about-heading h2 {
+  color: #fff;
+}
+
+.about-description {
+  grid-row: 2/-1;
+}
+.about-description p {
+  font-size: 2rem;
+  color: #fff;
+  padding-right: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-image {
+  grid-column: 2/-1;
+  grid-row: 1/5;
+}
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* media query for about me */
+@media (max-width: 450px) and (max-height: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .about-image {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

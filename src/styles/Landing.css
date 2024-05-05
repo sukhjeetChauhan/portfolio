@@ -1,6 +1,8 @@
 /* } */
-*/ .section.landing-area {
+.section.landing-area {
   max-width: 100vw;
+  padding: 8rem 10rem;
+  height: 100vh;
 }
 
 h1 {

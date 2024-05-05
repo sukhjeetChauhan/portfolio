@@ -7,7 +7,8 @@ h2 {
 }
 
 .container {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   position: relative;
   height: auto;
   background-color: #d4e5d7;
