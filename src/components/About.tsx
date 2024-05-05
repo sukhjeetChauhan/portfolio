@@ -1,4 +1,5 @@
 import '../styles/About.css'
+import StackIcon from 'tech-stack-icons'
 
 export default function About() {
   return (
@@ -7,23 +8,27 @@ export default function About() {
         <h2>About me</h2>
       </div>
       <div className="about-image">
-        <img src="/images/index/mainProPicCopy.JPG" alt="image of self" />
+        <img src="/mainProPic(B & W).JPG" alt="image of self" />
       </div>
       <div className="about-description">
         <p>
-          My career aspirations are to become an experienced Full-Stack Web
-          developer. I believe I can reach that point by taking small steps and
-          self-improving every day. I wish to be part of a team which makes a
-          difference to the society, even if their contribution is minimal. I
-          have a graduate and Post-graduate qualifications in the field of IT
+          I have a graduate and Post-graduate qualifications in the field of IT
           and business and I am recent graduate from Dev Academy Aotearoa
         </p>
         <p>
-          Since past year, I have been diving deeper into the web development
-          world and am really keen to begin my career in this field. I have few
+          Recently, I have been diving deeper into the web development
+          world and I really enjoy learning new technologies and problem solving. I have few
           projects under my belt which I have displayed in the following
           section.
         </p>
+        <p>Tech Stack</p>
+        <div className="tech-stack"></div>
+        <StackIcon name="html5" />
+        <StackIcon name="css3" />
+        <StackIcon name="js" />
+        <StackIcon name="tailwindcss" />
+        <StackIcon name="reactjs" />
+        <StackIcon name="nodejs" />
       </div>
     </section>
   )

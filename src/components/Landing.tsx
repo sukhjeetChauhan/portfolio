@@ -4,11 +4,11 @@ export default function Landing() {
   return (
     <section className="section landing-area">
       <div className="intro">
-        <h2>Hi! My name is Sukh.</h2>
-        <h2>
+        <p>Hi! My name is Sukh.</p>
+        <p>
           I'm a <span className="designation">fullstack developer</span>
-        </h2>
-        <h2>located in Auckland</h2>
+        </p>
+        <p>located in Auckland</p>
       </div>
 
       <p>
