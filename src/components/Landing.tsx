@@ -1,4 +1,5 @@
 import '../styles/Landing.css'
+import { HashLink } from 'react-router-hash-link'
 
 export default function Landing() {
   return (
@@ -17,7 +18,9 @@ export default function Landing() {
         remaining a lifelong student.
       </p>
 
-      <span id="landing-button">→ See my Projects</span>
+      <HashLink smooth to="#projects">
+        <button id="landing-button">→ See my Projects</button>
+      </HashLink>
     </section>
   )
 }
