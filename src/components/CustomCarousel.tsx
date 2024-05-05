@@ -21,7 +21,7 @@ function CustomCarousel({ children }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      if (val >= children.length - 3) {
+      if (val >= children.length - 1) {
         return 0
       } else {
         return val + 1

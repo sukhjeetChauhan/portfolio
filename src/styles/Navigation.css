@@ -34,3 +34,9 @@
   font-weight: bold;
   color: #12b886;
 }
+
+@media (max-width: 730px) {
+  .navigation {
+    display: none;
+  }
+}
