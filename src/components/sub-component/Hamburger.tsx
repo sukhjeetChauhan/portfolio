@@ -158,6 +158,14 @@ function HamburgerMenu() {
 
           <li>
             <ItemLink onClick={handleClick} to="">
+              <HashLink smooth to={pdf} target="_blank">
+                Download CV
+              </HashLink>
+            </ItemLink>
+          </li>
+
+          <li>
+            <ItemLink onClick={handleClick} to="">
               <HashLink smooth to="#contact">
                 Contact Us
               </HashLink>

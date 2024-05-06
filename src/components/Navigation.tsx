@@ -1,6 +1,7 @@
 import '../styles/Navigation.css'
 import { HashLink } from 'react-router-hash-link'
 import HamburgerMenu from './sub-component/Hamburger'
+import pdf from '../assets/Sukhjeet Chauhan cv.pdf'
 
 export default function Navigation() {
   return (
@@ -13,6 +14,9 @@ export default function Navigation() {
           </HashLink>
           <HashLink smooth to="#projects">
             <li>Projects</li>
+          </HashLink>
+          <HashLink smooth to={pdf} target="_blank">
+            <li>Download CV</li>
           </HashLink>
           <HashLink smooth to="#contact">
             <li>Contact</li>
