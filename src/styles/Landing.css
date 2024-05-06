@@ -59,4 +59,7 @@ h2 {
   .intro {
     margin-bottom: 5rem;
   }
+  .section.landing-area {
+    padding: 12rem 7rem;
+  }
 }

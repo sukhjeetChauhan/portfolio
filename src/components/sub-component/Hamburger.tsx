@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
-import pdf from '../../assets/Sukhjeet Chauhan cv.pdf'
+
+interface IconProps {
+  clicked: string
+}
 
 const COLORS = {
   primaryDark: '#115b4c',
@@ -27,7 +30,7 @@ const MenuLabel = styled.label`
   }
 `
 
-const NavBackground = styled.div`
+const NavBackground = styled.div<IconProps>`
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
@@ -39,13 +42,15 @@ const NavBackground = styled.div`
   width: 6rem;
   border-radius: 50%;
   z-index: 600;
-  transform: ${(props) => (props.clicked ? 'scale(80)' : 'scale(0)')};
+  transform: ${(props) =>
+    props.clicked === 'true' ? 'scale(80)' : 'scale(0)'};
   transition: transform 0.8s;
 `
 
-const Icon = styled.span`
+const Icon = styled.span<IconProps>`
   position: relative;
-  background-color: ${(props) => (props.clicked ? 'transparent' : 'black')};
+  background-color: ${(props) =>
+    props.clicked === 'true' ? 'transparent' : 'black'};
   width: 3rem;
   height: 2px;
   display: inline-block;
@@ -66,32 +71,34 @@ const Icon = styled.span`
   }
 
   &::before {
-    top: ${(props) => (props.clicked ? '0' : '-0.8rem')};
-    transform: ${(props) => (props.clicked ? 'rotate(135deg)' : 'rotate(0)')};
+    top: ${(props) => (props.clicked === 'true' ? '0' : '-0.8rem')};
+    transform: ${(props) =>
+      props.clicked === 'true' ? 'rotate(135deg)' : 'rotate(0)'};
   }
 
   &::after {
-    top: ${(props) => (props.clicked ? '0' : '0.8rem')};
+    top: ${(props) => (props.clicked === 'true' ? '0' : '0.8rem')};
 
-    transform: ${(props) => (props.clicked ? 'rotate(-135deg)' : 'rotate(0)')};
+    transform: ${(props) =>
+      props.clicked === 'true' ? 'rotate(-135deg)' : 'rotate(0)'};
   }
 
   ${MenuLabel}:hover &::before {
-    top: ${(props) => (props.clicked ? '0' : '-1rem')};
+    top: ${(props) => (props.clicked === 'true' ? '0' : '-1rem')};
   }
   ${MenuLabel}:hover &::after {
-    top: ${(props) => (props.clicked ? '0' : '1rem')};
+    top: ${(props) => (props.clicked === 'true' ? '0' : '1rem')};
   }
 `
 
-const Navigation = styled.nav`
+const Navigation = styled.nav<IconProps>`
   height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 600;
-  width: ${(props) => (props.clicked ? '100%' : '0')};
-  opacity: ${(props) => (props.clicked ? '1' : '0')};
+  width: ${(props) => (props.clicked === 'true' ? '100%' : '0')};
+  opacity: ${(props) => (props.clicked === 'true' ? '1' : '0')};
 
   transition: width 0.8s, opacity 0.8s;
 `
@@ -105,7 +112,7 @@ const List = styled.ul`
   text-align: center;
   width: 100%;
 `
-const ItemLink = styled(NavLink)`
+const ItemLink = styled(HashLink)`
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -131,37 +138,31 @@ const ItemLink = styled(NavLink)`
 `
 
 function HamburgerMenu() {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState<boolean>(false)
   const handleClick = () => setClick(!click)
   return (
     <>
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
-        <Icon clicked={click}>&nbsp;</Icon>
+        <Icon clicked={click.toString()}>&nbsp;</Icon>
       </MenuLabel>
-      <NavBackground clicked={click}>&nbsp;</NavBackground>
+      <NavBackground clicked={click.toString()}>&nbsp;</NavBackground>
 
-      <Navigation clicked={click}>
+      <Navigation clicked={click.toString()}>
         <List>
           <li>
-            <ItemLink onClick={handleClick} to="">
-              <HashLink smooth to="#about">
-                About
-              </HashLink>
+            <ItemLink onClick={handleClick} smooth to="#about">
+              About
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="">
-              <HashLink smooth to="#projects">
-                Projects
-              </HashLink>
+            <ItemLink onClick={handleClick} smooth to="#projects">
+              Projects
             </ItemLink>
           </li>
 
           <li>
-            <ItemLink onClick={handleClick} to="">
-              <HashLink smooth to="#contact">
-                Contact Us
-              </HashLink>
+            <ItemLink onClick={handleClick} smooth to="#contact">
+              Contact Us
             </ItemLink>
           </li>
         </List>
