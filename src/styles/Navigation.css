@@ -39,4 +39,8 @@
   .navigation {
     display: none;
   }
+
+  .nav-list a {
+    color: #b6edc8;
+  }
 }

@@ -21,7 +21,6 @@ function CustomCarousel({ data, showModal }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      console.log(activeIndex)
       if (val >= data.length - 1) {
         return 0
       } else {
