@@ -3,9 +3,11 @@ import { useState, useEffect, SetStateAction } from 'react'
 import '../styles/CustomCarousel.css'
 import { Data } from '../models/models'
 
+type ShowModalFunction = (data: Data) => void
+
 interface CustomCarouselProps {
   data: Data[] // Specify the type for the 'data' prop
-  showModal: React.Dispatch<SetStateAction<{}>> // Specify the type for the 'showModal' prop
+  showModal: ShowModalFunction // Specify the type for the 'showModal' prop
 }
 
 function CustomCarousel({ data, showModal }: CustomCarouselProps) {
