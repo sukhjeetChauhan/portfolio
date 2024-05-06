@@ -162,7 +162,7 @@ function HamburgerMenu() {
 
           <li>
             <ItemLink onClick={handleClick} smooth to="#contact">
-              Contact Us
+              Contact
             </ItemLink>
           </li>
         </List>

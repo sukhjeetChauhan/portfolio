@@ -83,7 +83,7 @@ const selfMade: Data[] = [
       'Auth0',
     ],
     description:
-      'This is my ongoing personal project. The main idea of this app is to build an app which provides more flexibility to the users in terms of designing their own personal health schedule. It shows exercises to the user based on choice of their workout days and choice of their body part. Further functionality that I plan to add to this is to dispaly the user amount of calories they can consume based on their personal goals and finally also add functionality of giving them upto date information on health industry.',
+      'This is my ongoing personal project. The main idea of this app is to build an app which provides more flexibility to the users in terms of designing their own personal health schedule. It shows exercises to the user based on choice of their workout days and choice of their body part. Further functionality that I plan to add to this is to display the user amount of calories they can consume based on their personal goals and finally also add functionality of giving them upto date information on health industry.',
   },
   {
     name: 'Books Todos',
