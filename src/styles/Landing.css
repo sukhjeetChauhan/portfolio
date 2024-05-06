@@ -56,4 +56,7 @@ h2 {
   #landing-button {
     font-size: 2.5rem;
   }
+  .intro {
+    margin-bottom: 5rem;
+  }
 }

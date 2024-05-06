@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import '../styles/CustomCarousel.css'
 
-function CustomCarousel({ children }) {
+function CustomCarousel({ data, showModal }) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [slideDone, setSlideDone] = useState(true)
   const [timeID, setTimeID] = useState(0)
@@ -21,7 +21,8 @@ function CustomCarousel({ children }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      if (val >= children.length - 1) {
+      console.log(activeIndex)
+      if (val >= data.length - 1) {
         return 0
       } else {
         return val + 1
@@ -32,7 +33,7 @@ function CustomCarousel({ children }) {
   const slidePrev = () => {
     setActiveIndex((val) => {
       if (val <= 0) {
-        return children.length - 1
+        return data.length - 1
       } else {
         return val - 1
       }
@@ -42,7 +43,7 @@ function CustomCarousel({ children }) {
   const AutoPlayStop = () => {
     if (timeID > 0) {
       clearTimeout(timeID)
-      setTimeID(0)
+      // setTimeID(0)
 
       setSlideDone(false)
     }
@@ -60,13 +61,22 @@ function CustomCarousel({ children }) {
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
-      {children.map((item, index) => {
+      {data.map((project, index) => {
         return (
           <div
             className={'slider__item slider__item-active-' + (activeIndex + 1)}
             key={index}
           >
-            {item}
+            <div key={`${project.name} ${index}`} className="project-container">
+              <button
+                className="project-btn"
+                onClick={() => showModal(project)}
+              >
+                <img key={index} src={project.imgURL} alt={project.imgAlt} />
+                <h3 className="project-name">{project.name}</h3>
+                <p className="overlay-text">Click for Details</p>
+              </button>
+            </div>
           </div>
         )
       })}
