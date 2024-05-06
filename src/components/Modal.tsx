@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom'
 import '../styles/Modal.css'
+import { Data } from '../models/models'
 
-export default function Modal({ data, setIsOpen }) {
+interface ModalProps {
+  data: Data // Specify the type for the 'data' prop
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>> // Specify the type for the 'showModal' prop
+}
+
+export default function Modal({ data, setIsOpen }: ModalProps) {
   function handleClose() {
     setIsOpen(false)
   }
