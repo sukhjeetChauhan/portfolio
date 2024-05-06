@@ -6,8 +6,17 @@ import Modal from './Modal.tsx'
 import { Data } from '../models/models.ts'
 
 export default function Projects() {
+  const initialState = {
+    name: '',
+    gitHub: '',
+    deploy: '',
+    imgURL: '',
+    imgAlt: '',
+    tech: [''],
+    description: '',
+  }
   const [isOpen, setIsOpen] = useState(false)
-  const [modalData, setmodaldata] = useState({})
+  const [modalData, setmodaldata] = useState(initialState)
 
   function showModal(data: Data) {
     setIsOpen(true)
