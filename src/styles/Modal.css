@@ -8,7 +8,7 @@
   z-index: 100;
   color: black;
   border-radius: 7px;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-height: calc(100vh - 5rem);
   overflow-y: auto;
   box-shadow: -1px 2px 13px 3px #12b886;
@@ -75,6 +75,7 @@ img {
 @media (max-width: 500px) {
   .modal-container {
     width: 80vw;
-    margin-top: 25%;
+    margin-top: 20%;
+    height: auto;
   }
 }
