@@ -15,11 +15,11 @@ export default function Footer() {
         <Link to="https://github.com/sukhjeetChauhan" target="_blank">
           <i className="fa fa-github fa-4x icon-40 logo"></i>
         </Link>
-        <Link to="/contact" target="_blank">
+        <Link to="/contact">
           <i className="fa fa-envelope fa-4x icon-40 logo"></i>
         </Link>
 
-        <Link to="/contact" target="_blank">
+        <Link to="/contact">
           <i className="fa fa-phone fa-4x icon-40 logo"></i>
         </Link>
       </div>
