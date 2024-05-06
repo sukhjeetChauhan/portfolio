@@ -71,6 +71,7 @@ svg {
     grid-column: 1/-1;
     grid-row: 5/8;
     width: 100%;
+    padding: 0;
   }
   .about-heading {
     grid-row: 1/2;

@@ -1,8 +1,16 @@
 import { useState, useEffect } from 'react'
 
 import '../styles/CustomCarousel.css'
+import { Data } from '../models/models'
 
-function CustomCarousel({ data, showModal }) {
+type ShowModalFunction = (data: Data) => void
+
+interface CustomCarouselProps {
+  data: Data[] // Specify the type for the 'data' prop
+  showModal: ShowModalFunction // Specify the type for the 'showModal' prop
+}
+
+function CustomCarousel({ data, showModal }: CustomCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [slideDone, setSlideDone] = useState(true)
   const [timeID, setTimeID] = useState(0)
@@ -17,6 +25,7 @@ function CustomCarousel({ data, showModal }) {
         }, 5000)
       )
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slideDone])
 
   const slideNext = () => {

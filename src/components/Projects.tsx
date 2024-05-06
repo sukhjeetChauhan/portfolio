@@ -1,14 +1,15 @@
 import CustomCarousel from './CustomCarousel'
 import { guided, selfMade } from '../../data/projects.ts'
 import '../styles/Projects.css'
-import { SetStateAction, useState } from 'react'
+import { useState } from 'react'
 import Modal from './Modal.tsx'
+import { Data } from '../models/models.ts'
 
 export default function Projects() {
   const [isOpen, setIsOpen] = useState(false)
   const [modalData, setmodaldata] = useState({})
 
-  function showModal(data: SetStateAction<object>) {
+  function showModal(data: Data) {
     setIsOpen(true)
     setmodaldata(data)
   }

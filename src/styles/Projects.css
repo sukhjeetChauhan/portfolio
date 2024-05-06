@@ -72,3 +72,16 @@ h2 {
 .project-btn {
   border: none;
 }
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 7rem;
+  }
+
+  h1 {
+    margin-left: 7rem;
+  }
+  h2 {
+    margin-left: 7rem;
+  }
+}

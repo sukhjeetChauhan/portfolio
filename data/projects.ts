@@ -1,4 +1,6 @@
-const guided = [
+import { Data } from '../src/models/models'
+
+const guided: Data[] = [
   {
     name: 'Omnifood',
     gitHub: '',
@@ -41,7 +43,7 @@ const guided = [
   },
 ]
 
-const selfMade = [
+const selfMade: Data[] = [
   {
     name: 'MealEasy',
     gitHub: 'https://github.com/MealEasy',
