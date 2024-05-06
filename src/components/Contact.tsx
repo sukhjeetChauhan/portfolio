@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/Contact.css'
 
 export default function Contact() {
@@ -14,6 +15,9 @@ export default function Contact() {
         <p>
           Phone: <span>0274370467</span>
         </p>
+        <Link to="/">
+          <button className="home-btn">Back to Home</button>
+        </Link>
       </div>
     </div>
   )
