@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom'
 import '../styles/Modal.css'
 
 export default function Modal({ data, setIsOpen }) {
-  console.log(data)
-
   function handleClose() {
     setIsOpen(false)
   }
@@ -26,8 +24,8 @@ export default function Modal({ data, setIsOpen }) {
       <div className="content">
         <div className="tech">
           <ul className="tech-list">
-            {data.tech.map((item: string) => (
-              <li>{item}</li>
+            {data.tech.map((item: string, i: number) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
         </div>

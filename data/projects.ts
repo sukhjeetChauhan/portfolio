@@ -124,7 +124,7 @@ const selfMade = [
   {
     name: 'Calculator',
     gitHub: 'https://github.com/sukhjeetChauhan/calculator',
-    deploy: 'https://sukhjeetchauhan.github.io/calculator-app/index.htm',
+    deploy: 'https://sukhjeetchauhan.github.io/calculator-app/',
     imgURL: '/project.images/calculator.png',
     imgAlt: 'calculator',
     tech: ['HTML', 'CSS', 'javascript'],

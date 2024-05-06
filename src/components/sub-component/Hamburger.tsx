@@ -10,8 +10,9 @@ const COLORS = {
 
 const MenuLabel = styled.label`
   background-color: ${COLORS.primaryLight};
+  display: none;
   position: fixed;
-  top: 6rem;
+  top: 2rem;
   right: 6rem;
   border-radius: 50%;
   height: 7rem;
@@ -20,6 +21,9 @@ const MenuLabel = styled.label`
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
+  @media (max-width: 730px) {
+    display: block;
+  }
 `
 
 const NavBackground = styled.div`
@@ -138,8 +142,10 @@ function HamburgerMenu() {
       <Navigation clicked={click}>
         <List>
           <li>
-            <ItemLink onClick={handleClick} to="#about">
-              About
+            <ItemLink onClick={handleClick} to="">
+              <HashLink smooth to="#about">
+                About
+              </HashLink>
             </ItemLink>
           </li>
           <li>
@@ -151,8 +157,10 @@ function HamburgerMenu() {
           </li>
 
           <li>
-            <ItemLink onClick={handleClick} to="/contact">
-              Contact Us
+            <ItemLink onClick={handleClick} to="">
+              <HashLink smooth to="#contact">
+                Contact Us
+              </HashLink>
             </ItemLink>
           </li>
         </List>
