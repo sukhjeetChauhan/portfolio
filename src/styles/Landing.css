@@ -55,11 +55,12 @@ h2 {
 @media (max-width: 500px) {
   #landing-button {
     font-size: 2.5rem;
+    margin-top: 10rem;
   }
   .intro {
     margin-bottom: 5rem;
   }
   .section.landing-area {
-    padding: 12rem 7rem;
+    padding: 12rem 5rem;
   }
 }

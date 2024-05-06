@@ -75,13 +75,13 @@ h2 {
 
 @media (max-width: 500px) {
   .container {
-    margin: 0 7rem;
+    margin: 0 5rem;
   }
 
   h1 {
-    margin-left: 7rem;
+    margin-left: 5rem;
   }
   h2 {
-    margin-left: 7rem;
+    margin-left: 5rem;
   }
 }
