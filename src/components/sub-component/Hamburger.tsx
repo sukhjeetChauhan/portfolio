@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
+import pdf from '../../assets/Sukhjeet Chauhan cv.pdf'
 
 const COLORS = {
   primaryDark: '#115b4c',

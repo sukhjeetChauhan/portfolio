@@ -44,6 +44,14 @@
   margin-left: 2rem;
 }
 
+.home-btn {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  font: bold;
+  color: #12b886;
+}
+
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
@@ -53,6 +61,14 @@
 
   .img-container {
     height: 50%;
+  }
+
+  .contact-heading {
+    margin-bottom: 4rem;
+  }
+
+  .home-btn {
+    margin-top: 3rem;
   }
 }
 
