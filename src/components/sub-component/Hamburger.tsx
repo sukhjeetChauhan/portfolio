@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
+import pdf from '../../assets/Sukhjeet Chauhan cv.pdf'
 
 const COLORS = {
   primaryDark: '#115b4c',
@@ -152,14 +153,6 @@ function HamburgerMenu() {
             <ItemLink onClick={handleClick} to="">
               <HashLink smooth to="#projects">
                 Projects
-              </HashLink>
-            </ItemLink>
-          </li>
-
-          <li>
-            <ItemLink onClick={handleClick} to="">
-              <HashLink smooth to={pdf} target="_blank">
-                Download CV
               </HashLink>
             </ItemLink>
           </li>
