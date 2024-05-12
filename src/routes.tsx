@@ -2,14 +2,13 @@ import { Route, createRoutesFromElements } from 'react-router-dom'
 import App from './components/App.tsx'
 
 import Contact from './components/Contact.tsx'
-import Resume from './components/sub-component/Resume.tsx'
+import Layout from './components/Layout.tsx'
 
 const routes = createRoutesFromElements(
-  <>
-    <Route path="/" element={<App />} />
+  <Route path="/" element={<Layout />}>
+    <Route index element={<App />} />
     <Route path="/contact" element={<Contact />} />
-    <Route path="/resume" element={<Resume />} />
-  </>
+  </Route>
 )
 
 export default routes
