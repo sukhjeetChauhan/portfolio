@@ -1,7 +1,7 @@
 import '../styles/Navigation.css'
 import { HashLink } from 'react-router-hash-link'
 import HamburgerMenu from './sub-component/Hamburger'
-import pdf from '/Sukhjeet Chauhan cv.pdf'
+import pdf from '/Sukhjeet Chauhan resume.pdf'
 import { Link } from 'react-router-dom'
 
 export default function Navigation() {
