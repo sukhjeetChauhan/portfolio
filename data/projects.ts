@@ -45,6 +45,31 @@ const guided: Data[] = [
 
 const selfMade: Data[] = [
   {
+    name: 'PizzaStop',
+    gitHub: 'https://github.com/sukhjeetChauhan/pizza-stop',
+    deploy: 'https:pizzastopwellsford.co.nz',
+    imgURL: '/project.images/pizzastop.png',
+    imgAlt: 'pizzastop',
+    tech: [
+      'React',
+      'vite',
+      'antd',
+      'typescript',
+      'node.js',
+      'tailwind',
+      'Firebase',
+      'Stripe',
+    ],
+    description: `PizzaStop is a sleek and responsive food ordering website developed for a local pizza store. Built using React, Vite, and TypeScript, the platform ensures fast performance and type-safe code. The design leverages Ant Design (AntD) components for a consistent UI and Tailwind CSS for custom, responsive styling.
+
+    The backend, powered by Node.js, integrates seamlessly with Firebase Firestore for real-time database management, allowing for dynamic content updates and efficient data handling. The platform features Stripe integration for secure payment processing, enabling customers to place orders with ease and confidence.
+
+    An advanced order management system was developed, allowing store staff to track and manage orders effortlessly. To enhance customer experience, Firebase Cloud Functions automate email notifications, informing customers when their orders are accepted.
+
+.
+      `,
+  },
+  {
     name: 'MealEasy',
     gitHub: 'https://github.com/MealEasy',
     deploy: 'https://meal-easy.pushed.nz/',
