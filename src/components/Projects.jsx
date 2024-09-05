@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="flex items-center justify-center">
           <div
             data-aos="fade-left"
-            className="rounded-3xl pb-16 w-3/5 drop-shadow-primary self-start flex flex-col gap-10"
+            className="rounded-3xl pb-16 md:w-3/5 drop-shadow-primary self-start flex flex-col gap-10"
           >
             {Projects.project_content.map((content, i) => (
               <div
