@@ -53,7 +53,7 @@ const Projects = () => {
                     className="font-bold text-gray self-end"
                     onClick={() => showDetails(content.title)}
                   >
-                    READ MORE
+                    {detailWindowState[content.title] ? 'CLOSE' : 'READ MORE'}
                   </button>
                 </div>
                 <Collapse isOpened={detailWindowState[content.title]}>
