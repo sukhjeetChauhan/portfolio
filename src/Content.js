@@ -159,7 +159,7 @@ export const content = {
       {
         title: 'Pizza Stop',
         gitHub: 'https://github.com/sukhjeetChauhan/pizza-stop',
-        deploy: 'https:pizzastopwellsford.co.nz',
+        deploy: 'https://pizzastopwellsford.co.nz',
         image: pizzastop,
         tech: [
           'React',
