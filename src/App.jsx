@@ -11,6 +11,8 @@ import { useEffect } from 'react'
 // Animation package
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+// Analytics
+import { Analytics } from '@vercel/analytics/react'
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +32,7 @@ const App = () => {
       {/* <Testimonials /> */}
       <Hireme />
       <Contact />
+      <Analytics />
       <footer className="p-3 text-center">
         <h6 className="mb-3">SUKHJEET CHAUHAN</h6>
         <p>© All CopyRights Reserved 2024</p>
