@@ -233,7 +233,7 @@ export const content = {
         title: 'Max Fitness College',
         gitHub: '',
         deploy: 'https://maxfitnesscollege.com/',
-        image: bbloans,
+        image: maxfitness,
         tech: [
           'Wordpress',
           'divi',
