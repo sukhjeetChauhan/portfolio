@@ -18,6 +18,10 @@ import services_logo3 from './assets/images/Services/logo3.png'
 import recipeApp from './assets/images/Projects/RecipeApp.png'
 import mealEasy from './assets/images/Projects/meal-easy.png'
 import pizzastop from './assets/images/Projects/pizzastop.png'
+import outgo from './assets/images/Projects/outgo.png'
+import jobracker from './assets/images/Projects/jobracker.png'
+import maxfitness from './assets/images/Projects/maxfitnesscollege.png'
+import bbloans from './assets/images/Projects/bbloans.png'
 
 import avatar1 from './assets/images/Testimonials/avatar1.png'
 import avatar2 from './assets/images/Testimonials/avatar2.png'
@@ -175,6 +179,72 @@ export const content = {
         The backend, powered by Node.js, integrates seamlessly with Firebase Firestore for real-time database management, allowing for dynamic content updates and efficient data handling. The platform features Stripe integration for secure payment processing, enabling customers to place orders with ease and confidence.
         An advanced order management system was developed, allowing store staff to track and manage orders effortlessly. To enhance customer experience, Firebase Cloud Functions automate email notifications, informing customers when their orders are accepted.`,
       },
+      {
+        title: 'Outgo Tracker',
+        gitHub: 'https://github.com/sukhjeetChauhan/Outgo-tracker-react',
+        deploy: 'https://www.outgotracker.app/',
+        image: outgo,
+        tech: [
+          'React',
+          'vite',
+          'antd',
+          'typescript',
+          'tailwind',
+          '.net',
+          'postgres',
+        ],
+        description: `Outgo Tracker is a modern and intuitive expense tracking web application designed to help users manage their finances effectively. Developed using React, Vite, and TypeScript, the platform offers a seamless user experience with fast performance and type-safe code. The design features Ant Design (AntD) components for a clean and consistent UI and Tailwind CSS for responsive styling.
+        The backend, built with .NET and PostgreSQL, ensures secure data storage and efficient data management. The platform enables users to log their expenses, categorize transactions, and view detailed spending reports. Users can set budgets, track savings goals, and receive notifications to stay informed about their financial health.`,
+      },
+      {
+        title: 'Job Racker',
+        gitHub: 'https://github.com/sukhjeetChauhan/Job-Racker',
+        deploy: 'https://www.jobracker.com/',
+        image: jobracker,
+        tech: [
+          'React',
+          'vite',
+          'antd',
+          'typescript',
+          'tailwind',
+          'django',
+          'openai api',
+          'postgres',
+        ],
+        description: `JobRacker is a comprehensive job application tracking platform designed to help users organize and manage their job search effectively. It uses power of AI to compare resumes with job descriptions. Developed using React, Vite, and TypeScript, the platform offers a modern and intuitive user experience with fast performance and type-safe code. The design features Ant Design (AntD) components for a clean and consistent UI and Tailwind CSS for responsive styling.
+        The backend, built with Django and PostgreSQL, ensures secure data storage and efficient data management. The platform enables users to track job applications, set reminders, and view detailed application reports. Users can categorize applications, track interview progress, and receive notifications to stay informed about their job search.`,
+      },
+      {
+        title: 'BB Loans',
+        gitHub: '',
+        deploy: 'https://www.bbloans.co.nz/',
+        image: bbloans,
+        tech: [
+          'Wordpress',
+          'divi',
+          'css 3',
+          'html 5',
+          'go high level',
+          'forms',
+        ],
+        description: `BB Loans is a professional and responsive website developed for a loan company. Built using WordPress, Divi, and custom CSS, the platform offers a user-friendly experience with a modern and clean design. The website features custom forms and integrations with Go High Level for lead management and customer communication. The design is fully responsive and optimized for all devices, ensuring a seamless user experience.`,
+      },
+      {
+        title: 'Max Fitness College',
+        gitHub: '',
+        deploy: 'https://maxfitnesscollege.com/',
+        image: bbloans,
+        tech: [
+          'Wordpress',
+          'divi',
+          'css 3',
+          'html 5',
+          'go high level',
+          'forms',
+        ],
+        description: `Max Fitness College is a professional and responsive website developed for a fitness college. Built using WordPress, Divi, and custom CSS, the platform offers a user-friendly experience with a modern and clean design. The website features custom forms and integrations with Go High Level for Course building and customer communication. The design is fully responsive and optimized for all devices, ensuring a seamless user experience.`,
+      },
+
       {
         title: 'MealEasy',
         gitHub: 'https://github.com/MealEasy',
